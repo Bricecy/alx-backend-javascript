@@ -1,15 +1,15 @@
-function taskFirst() {
-  const firstName = "John";
-  const lastName = "Doe";
-  console.log(`Hello, ${firstName} ${lastName}`);
+export function taskFirst() {
+  const task = 'I prefer const when I can.';
+  return task;
 }
 
-function taskNext() {
-  let count = 0;
-  count = count + 1;
-  console.log(`Count: ${count}`);
+export function getLast() {
+  return ' is okay';
 }
 
-taskFirst(); // Output: Hello, John Doe
-taskNext();  // Output: Count: 1
+export function taskNext() {
+  let combination = 'But sometimes let';
+  combination += getLast();
 
+  return combination;
+}
